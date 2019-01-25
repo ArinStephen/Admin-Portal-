@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84F66129-9EA4-44A5-8BF0-CCB9ACC07C4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SE_Final2</RootNamespace>
+    <AssemblyName>SE_Final2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminLink1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLink1.Designer.cs">
+      <DependentUpon>adminLink1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminLink2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLink2.Designer.cs">
+      <DependentUpon>adminLink2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminWindow.Designer.cs">
+      <DependentUpon>adminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="companyLink1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="companyLink1.Designer.cs">
+      <DependentUpon>companyLink1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Info_Data.cs" />
+    <Compile Include="EmployeeInfo.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeWindow.Designer.cs">
+      <DependentUpon>employeeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="masterLink1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterLink1.Designer.cs">
+      <DependentUpon>masterLink1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="masterWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterWindow.Designer.cs">
+      <DependentUpon>masterWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="updatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePassword.Designer.cs">
+      <DependentUpon>updatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateUser.Designer.cs">
+      <DependentUpon>updateUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminLink1.resx">
+      <DependentUpon>adminLink1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminLink2.resx">
+      <DependentUpon>adminLink2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminWindow.resx">
+      <DependentUpon>adminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="companyLink1.resx">
+      <DependentUpon>companyLink1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeWindow.resx">
+      <DependentUpon>employeeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterLink1.resx">
+      <DependentUpon>masterLink1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterWindow.resx">
+      <DependentUpon>masterWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePassword.resx">
+      <DependentUpon>updatePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateUser.resx">
+      <DependentUpon>updateUser.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
